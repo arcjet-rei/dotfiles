@@ -1,0 +1,25 @@
+[user]
+	name = rei
+	email = forrest@arcjet.com
+	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIG4dWBe37BBLcRIrxzvwVF/R2LBXPHTXd8QaD0TdLo84 moribito-github-ssh-sign
+[gpg]
+	format = ssh
+[gpg "ssh"]
+	program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign"
+[commit]
+	gpgsign = true
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[alias]
+	a = !git-alias
+	fa = fetch --all
+	d = diff
+	ds = diff --staged
+	s = status -sb
+	prom = pull --rebase origin main
+	ca = commit --all
+	cv = commit --verbose
+	cav = commit --all --verbose
