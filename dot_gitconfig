@@ -15,11 +15,12 @@
 	required = true
 [alias]
 	a = !git-alias
+	ca = commit --all
+	cav = commit --all --verbose
+	cv = commit --verbose
 	fa = fetch --all
 	d = diff
 	ds = diff --staged
-	s = status -sb
+	lg = log --oneline
 	prom = pull --rebase origin main
-	ca = commit --all
-	cv = commit --verbose
-	cav = commit --all --verbose
+	s = status -sb
