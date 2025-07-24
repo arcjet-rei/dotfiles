@@ -21,17 +21,4 @@ return {
     "hrsh7th/cmp-buffer",
     "hrsh7th/cmp-vsnip",
     "hrsh7th/vim-vsnip",
-
-    {
-        "wincent/command-t",
-        build = "cd lua/wincent/commandt/lib && make",
-        setup = function ()
-            vim.g.CommandTPreferredImplementation = "lua"
-        end,
-        config = function()
-            require("wincent.commandt").setup({
-                -- Customizations go here.
-            })
-        end,
-    },
 }

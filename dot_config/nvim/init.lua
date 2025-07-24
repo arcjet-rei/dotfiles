@@ -1,6 +1,12 @@
+-- 零の「init.lua」 created fresh for Arcjet
+
+-- ack.vim: set this so that ack doesn't need to be installed
+vim.g.ackprg = "rg --vimgrep"
+
 require('config.lazy')
-require('opts')
 require('config.lualine')
+require('config.nerdtree')
+require('opts')
 
 -- CommandT bindings
 vim.keymap.set('n', '<Leader>b', '<Plug>(CommandTBuffer)')
@@ -117,3 +123,9 @@ cmp.setup({
       end,
   },
 })
+
+
+-- Tabularize (godlygeek/tabular)
+vim.keymap.set('', '<Leader>=', ':Tabularize /=<CR>', { noremap = true })
+vim.keymap.set('', '<Leader>>', ':Tabularize /=><CR>', { noremap = true })
+vim.keymap.set('', '<Leader>,', ':Tabularize /,\\zs<CR>', { noremap = true })
