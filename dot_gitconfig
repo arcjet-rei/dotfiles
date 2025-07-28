@@ -25,3 +25,5 @@
 	lg = log --oneline
 	prom = pull --rebase origin main
 	s = status -sb
+[core]
+	pager = delta
