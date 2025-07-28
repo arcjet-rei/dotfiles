@@ -21,4 +21,14 @@ return {
     "hrsh7th/cmp-buffer",
     "hrsh7th/cmp-vsnip",
     "hrsh7th/vim-vsnip",
+
+    -- live Markdown previwe
+    {
+        "iamcco/markdown-preview.nvim",
+        cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
+        ft = { "markdown" },
+        build = function() 
+            vim.fn["mkdp#util#install"]() 
+        end,
+    },
 }
