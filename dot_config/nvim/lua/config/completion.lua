@@ -10,18 +10,11 @@ require("mason").setup({
 })
 require("mason-lspconfig").setup()
 
-local rt = require("rust-tools")
+-- enable rust_analyzer
+vim.lsp.enable("rust_analyzer")
 
-rt.setup({
-    server = {
-        on_attach = function(_, bufnr)
-            -- Hover actions
-            vim.keymap.set("n", "<C-space>", rt.hover_actions.hover_actions, { buffer = bufnr })
-            -- Code action groups
-            vim.keymap.set("n", "<Leader>a", rt.code_action_group.code_action_group, { buffer = bufnr })
-        end,
-    },
-})
+-- enable Go LSP support
+require("lspconfig").gopls.setup({})
 
 -- LSP Diagnostics Options Setup
 vim.diagnostic.config({
