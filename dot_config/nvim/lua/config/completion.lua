@@ -109,8 +109,8 @@ cmp.setup({
 })
 
 vim.api.nvim_create_autocmd("LspAttach", {
-    callback = function(ev)
-        local bufopts = { noremap = true, silent = true, buffer = ev.buf }
+    callback = function(args)
+        local bufopts = { noremap = true, silent = true, buffer = args.buf }
         vim.keymap.set("n", "<space>f", function()
             require("conform").format({ async = true, lsp_fallback = true })
         end, bufopts)
@@ -118,3 +118,10 @@ vim.api.nvim_create_autocmd("LspAttach", {
 })
 
 require("lspconfig").lua_ls.setup({ settings = { diagnostics = { globals = { "vim" } } } })
+
+vim.api.nvim_create_autocmd("BufWritePre", {
+    pattern = "*",
+    callback = function(args)
+        require("conform").format({ bufnr = args.buf })
+    end,
+})

@@ -18,19 +18,16 @@ return {
         "stevearc/conform.nvim",
         opts = {
             formatters_by_ft = {
+                css = { "prettierd", "prettier" },
+                html = { "prettierd", "prettier" },
+                javascript = { "prettierd", "prettier" },
+                javascriptreact = { "prettierd", "prettier" },
+                json = { "prettierd", "prettier" },
                 lua = { "stylua" },
-            },
-            formatters = {
-                ocamlformat = {
-                    prepend_args = {
-                        "--if-then-else",
-                        "vertical",
-                        "--break-cases",
-                        "fit-or-vertical",
-                        "--type-decl",
-                        "sparse",
-                    },
-                },
+                markdown = { "prettierd", "prettier" },
+                rust = { "rustfmt" },
+                typescript = { "prettierd", "prettier" },
+                typescriptreact = { "prettierd", "prettier" },
             },
         },
     },
