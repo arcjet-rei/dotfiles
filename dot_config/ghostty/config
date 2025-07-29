@@ -43,13 +43,16 @@
 # resize-overlay-duration = 4s 200ms
 
 # 零settings created: 2025-07-28
-font-family = "MonaLisa Variable"
+
+# don't fake the funk
 font-synthetic-style = false
-font-family = "MonoLisa Variable Regular Regular"
-font-family-bold = "MonoLisa Variable Regular Bold"
-font-family-italic = "MonoLisa Variable Italic Italic"
+
+# I can already feel myself drifting back towards PragmataPro
+font-family             = "MonoLisa Variable Regular Regular"
+font-family-bold        = "MonoLisa Variable Regular Bold"
+font-family-italic      = "MonoLisa Variable Italic Italic"
 font-family-bold-italic = "MonoLisa Variable Italic Bold"
-font-size = 12
+font-size = 11
 
 theme = dark:"iTerm2 Solarized Dark",light:fairyfloss
 bold-is-bright = true
