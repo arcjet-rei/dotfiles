@@ -8,7 +8,7 @@ vim.api.nvim_create_autocmd("VimEnter", {
         if vim.fn.argc() == 0 then
             vim.cmd("NERDTree")
         end
-    end
+    end,
 })
 
 -- autoquit if NERDtree is the last window open
@@ -21,4 +21,3 @@ vim.api.nvim_create_autocmd("BufEnter", {
         end
     end,
 })
-
