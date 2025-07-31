@@ -1,17 +1,17 @@
 function upgrade-everything --description 'Run all the update commands that can be run without intervention'
     date
+    nvim --headless "+Lazy! sync" +qa
     and brew upgrade
-    and mas upgrade
-    and nvim --headless "+Lazy! sync" +qa
     and rustup update
     and if begin
             asdf latest --all
         end
         echo "All asdf-managed languages up to date."
     else
-        echo "Some asdf-managed languages need updating."
+        echo -e "\033[93;1mSome asdf-managed languages need updating.\033[0m"
     end
     and softwareupdate -ia
+    and mas upgrade
     and if begin
             chezmoi verify
         end
