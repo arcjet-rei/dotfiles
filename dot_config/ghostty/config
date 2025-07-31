@@ -17,7 +17,7 @@ font-style-italic       = "Light Italic"
 font-style-bold         = "ExtraBold"
 font-style-bold-italic  = "ExtraBold Italic"
 
-theme = dark:"iTerm2 Solarized Dark",light:fairyfloss
+theme = dark:"catppuccin-mocha",light:fairyfloss
 
 # sure why not
 shell-integration = fish
