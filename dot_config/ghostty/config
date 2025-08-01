@@ -16,6 +16,7 @@ font-style              = "Light"
 font-style-italic       = "Light Italic"
 font-style-bold         = "ExtraBold"
 font-style-bold-italic  = "ExtraBold Italic"
+adjust-cell-height      = -1
 
 theme = dark:"Tomorrow Night Eighties",light:fairyfloss
 
