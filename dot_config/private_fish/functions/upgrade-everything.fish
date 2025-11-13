@@ -3,7 +3,7 @@ function upgrade-everything --description 'Run all the update commands that can 
     nvim --headless "+Lazy! sync" +qa
     and brew upgrade
     and rustup update
-    and mise outdated --bump
+    and mise outdated
     and softwareupdate -ia
     and mas upgrade
     and if begin
