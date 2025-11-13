@@ -1,6 +1,6 @@
 [user]
-	name = rei
-	email = forrest@arcjet.com
+	name = 零Rei
+	email = rei@arcjet.com
 	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIG4dWBe37BBLcRIrxzvwVF/R2LBXPHTXd8QaD0TdLo84 moribito-github-ssh-sign
 [gpg]
 	format = ssh
