@@ -1,6 +1,7 @@
 function upgrade-everything --description 'Run all the update commands that can be run without intervention'
     date
     topgrade
+    nvim --headless "+TSUpdate" +qa
     nvim --headless "+Lazy! sync" +qa
     and if begin
             chezmoi verify
