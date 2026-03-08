@@ -27,3 +27,5 @@
 	s = status -sb
 [core]
 	pager = delta
+[push]
+	autoSetupRemote = true
