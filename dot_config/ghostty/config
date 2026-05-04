@@ -19,3 +19,6 @@ shell-integration = fish
 
 # right option key can be used to type in special characters
 macos-option-as-alt = left
+
+# the things Claude Code makes me do
+keybind = shift+enter=text:\x1b\r
