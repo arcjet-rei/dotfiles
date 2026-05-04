@@ -1,8 +1,16 @@
 [tools]
+bun = "latest"
 go = "1"
 java = "temurin"
+just = "latest"
 lua = "5.1"
 node = "24"
 python = "3"
-ruby = "3"
+rg = "latest"
+ruby = "latest"
 uv = "latest"
+
+[settings]
+
+[settings.ruby]
+compile = false
