@@ -16,7 +16,7 @@
 # Run `sudo -v` to cache credentials at the start of the run
 # This avoids a blocking password prompt in the middle of an unattended run
 # (default: false)
-# pre_sudo = false
+pre_sudo = true
 
 # Sudo command to be used
 # sudo_command = "sudo"
@@ -65,7 +65,7 @@
 # tmux_session_mode = "attach_if_not_in_session"
 
 # Cleanup temporary or old files (default: false)
-# cleanup = true
+cleanup = true
 
 # Send a notification for every step (default: false)
 # notify_each_step = false
@@ -150,7 +150,7 @@
 # For the BrewCask step
 # If `Repo Cask Upgrade` exists, then use the `-a` option.
 # Otherwise, use the `--greedy` option.
-# greedy_cask = true
+greedy_cask = true
 
 # For the BrewCask step
 # If `Repo Cask Upgrade` does not exist, then use the `--greedy_latest` option.
@@ -166,7 +166,7 @@
 
 # For the BrewFormula step
 # Execute `brew autoremove` after the step.
-# autoremove = true
+autoremove = true
 
 # For the BrewFormula step
 # Upgrade formulae built from the HEAD branch; `brew upgrade --fetch-HEAD`

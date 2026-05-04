@@ -1,9 +1,7 @@
 function upgrade-everything --description 'Run all the update commands that can be run without intervention'
     date
     topgrade
-    if begin
-            chezmoi verify
-        end
+    if chezmoi verify
         echo "No changes to tracked dotfiles."
     else
         echo "Chezmoi status:"
